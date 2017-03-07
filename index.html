@@ -36,7 +36,20 @@
         <button v-on:click="reverseMessage" class="btn btn-lg btn-info">Reverse Message</button>
       </div>
 
+      <div id="app-6">
 
+        <p>{{message}}</p>
+        <input type="text" class="form-control" v-model="message">
+      </div>
+
+
+    </div>
+
+    <div id="app-7" class="hero">
+
+      <ol>
+        <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+      </ol>
     </div>
 
     <script src="vue.js" charset="utf-8"></script>
